@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.security.pay.dao.PayMapper">
+
+    <insert id="insertPay" parameterType="com.security.pay.dto.PayDto">
+        INSERT INTO pay VALUES (#{payNo}, #{accountNo}, #{payType}, #{payName}, #{payPrice}, #{payMethod},SYSDATE)
+    </insert>
+    
+    <select id="getPaymentList" resultType="com.security.pay.dto.PayDto">
+	    SELECT account_no
+	    ,pay_no
+	    ,pay_name
+	    ,pay_price
+	    ,pay_method
+	    ,pay_date
+	    FROM pay
+	    WHERE account_no = #{accountNo}
+	</select>
+    
+
+</mapper>

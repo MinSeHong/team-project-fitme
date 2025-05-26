@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 매퍼파일 -->
+<mapper namespace="com.security.mypage.dao.MypageMapper">
+	<select id="findByUsername" parameterType="String" resultType="MypageAccountDto">
+		SELECT a.account_no
+				,username
+				,name
+				,gender
+				,age
+				,address
+				,hobby
+				,enroll_date
+				,image
+				,height
+				,weight
+				,game_image
+				,nickname
+				,SKELETAL_MUSCLE
+				,BODY_FAT_MASS
+				,BODY_FAT_PERCENTAGE
+				,ABDOMINAL_FAT_RATE
+				,BASAL_METABOLIC_RATE
+		FROM account a
+			,game_account g
+			, inbody i
+		WHERE a.account_no = i.account_no
+			and a.account_no = g.account_no
+			and username = #{username}
+	</select>
+	<select id="findByNo" parameterType="String" resultType="MypageAccountDto">
+		SELECT a.account_no
+			, username
+			, name
+			, gender
+			, age
+			, address
+			, hobby
+			, enroll_date
+			, image
+			, height
+			, weight
+			, game_image
+			, nickname
+			, SKELETAL_MUSCLE
+			, BODY_FAT_MASS
+			, BODY_FAT_PERCENTAGE
+		FROM account a
+		LEFT JOIN game_account g ON a.account_no = g.account_no
+		LEFT JOIN inbody i ON a.account_no = i.account_no
+		WHERE a.account_no = #{accountNo}
+	</select>
+	<select id="findAllByNo">
+		select gameroom_no
+				,account_no
+				,game_date
+				,gameroom_rank
+		from gameroom_ranking
+		WHERE account_no = #{accountNo}
+		ORDER BY game_date
+	</select>
+	<select id="findAccuracyAllByNo">
+		SELECT CATEGORY
+				,AVG(accuracy) accuracy
+				,end_postdate
+		FROM workout w,calendar c
+		WHERE w.calendar_no=c.calendar_no
+			and accuracy is not null
+			and c.account_no = #{accountNo}
+		GROUP BY CATEGORY,end_postdate
+		ORDER BY TRUNC(end_postdate)
+	</select>
+	<select id="findBigThreeAllByNo">
+		select CATEGORY,SUM(weight) weight,SUM(COUNTS) COUNTS,TRUNC(end_postdate) end_postdate
+		from workout w,calendar c
+		WHERE w.calendar_no = c.calendar_no
+		    and (category='벤치프레스' or category='데드리프트' or category='스쿼트')
+		    and account_no = #{accountNo}
+		GROUP BY CATEGORY, TRUNC(end_postdate)
+		ORDER BY TRUNC(end_postdate)
+	</select>
+	<select id="findWorkAllByNo">
+		select CATEGORY,SUM(weight) weight,SUM(COUNTS) counts,TRUNC(end_postdate) end_postdate
+		from workout w,calendar c
+		WHERE w.calendar_no = c.calendar_no
+		    and account_no = #{accountNo}
+		GROUP BY CATEGORY,TRUNC(end_postdate)
+		ORDER BY TRUNC(end_postdate)
+	</select>
+	<update id="updateAccountInfo" parameterType="MypageAccountDto">
+        UPDATE ACCOUNT
+        <set>
+            <if test="address != null">ADDRESS = #{address},</if>
+            <if test="age != null"> AGE = #{age},</if>
+            <if test="hobby != null">HOBBY = #{hobby},</if>
+            <if test="image != null">IMAGE = #{image},</if>
+            <if test="name != null">NAME = #{name},</if>     
+        </set>
+        WHERE
+            ACCOUNT_NO = #{accountNo}
+    </update>
+</mapper> 

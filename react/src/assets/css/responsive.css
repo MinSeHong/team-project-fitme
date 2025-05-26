@@ -1,0 +1,973 @@
+/* Normal desktop :1700px. */
+@media (min-width: 1700px) and (max-width: 1920px) {
+.footer_section .form_box input {
+    width: 83%;
+}
+
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1500px) and (max-width: 1699px) {
+.footer_section .form_box input {
+    width: 83%;
+}
+
+
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1300px) and (max-width: 1499px) {
+.footer_section .form_box input {
+    width: 83%;
+}
+.main-titles h2 {
+    font-size: 35px;
+}
+
+}
+/* Normal desktop :1170px. */
+@media (min-width: 1170px) and (max-width: 1299px) {
+.slider-title h1 {
+    font-size: 65px!important;
+}
+.slider-title p {
+    line-height: 25px!important;
+    font-size: 13px!important;
+}
+.offer-title h2 {
+    font-size: 18px;
+}
+.offer-discription p {
+    font-size: 13px;
+    line-height: 20px;
+}
+.about-thumb img {
+    width: 100%;
+}
+.icon-title h2 {
+    font-size: 16px;
+}
+.about-discription p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.section-discription p {
+    font-size: 15px;
+}
+.product-title h2 a {
+    font-size: 14px;
+}
+.product-kg {
+    margin-left: 10px;
+}
+.testi-discription p {
+    font-size: 15px;
+    line-height: 25px;
+}
+.testi-thumb img {
+    width: 100%;
+}
+.blog-left a {
+    font-size: 10px;
+}
+.blog-left span {
+    font-size: 11px;
+}
+.footer-icon ul li a {
+    width: 45px !important;
+    height: 45px;
+    line-height: 45px;
+}
+.footer-title p {
+    font-size: 14px;
+}
+.footer-ico ul li {
+    padding: 12px 0 0 0;
+}
+.footer-thumb {
+    margin-bottom: 10px;
+}
+.footer-discription p {
+    font-size: 14px;
+}
+.single-offer-box.style-two .offer-titles h3 {
+    font-size: 21px;
+}
+.single-offer-box.style-one .offer-titles h3 {
+    font-size: 21px;
+}
+.offer-area {
+    padding: 110px 0 40px;
+}
+.main-titles h2 {
+    font-size: 30px;
+}
+.about-images img {
+    width: 100%;
+}
+.abouts-discription p {
+    font-size: 13px;
+}
+.about-section .signature {
+    margin: 0 0 0 165px;
+}
+.about-section .signature img {
+    margin-top: -83px;
+}
+.countdown-area.style-two .main-titles p {
+    font-size: 15px;
+}
+.testmoni_tmb img {
+    width: 100%;
+}
+.testimonials-section .testi_title p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.support-discription p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.support-title h2 {
+    font-size: 18px;
+}
+.product-title p {
+    font-size: 14px;
+}
+.company-title p {
+    font-size: 11px;
+    line-height: 20px;
+}
+.footer-icon ul li {
+    margin-right: 0;
+}
+.footer-icons p {
+    font-size: 12px;
+}
+.service-title h2 {
+    font-size: 17px;
+}
+.choose-thumb img {
+    width: 100%;
+}
+.why-choose-area .choose-title p {
+    font-size: 14px;
+}
+
+
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1170px) {
+.slider-title h1 {
+    font-size: 65px!important;
+}
+.about-images img {
+    width: 100%;
+}
+.slider-title p {
+    line-height: 25px!important;
+    font-size: 13px!important;
+}
+.tops-title {
+    display: none;
+}
+.header-menu {
+    margin: 0 15px 0 0;
+}
+.header-menu ul li {
+    margin-right: 0;
+}
+.header-menu ul li a {
+    font-size: 13px;
+}
+.offer-title h2 {
+    font-size: 18px;
+}
+.offer-discription p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.main-title h2 {
+    font-size: 32px;
+}
+.icon-title h2 {
+    font-size: 16px;
+}
+.about-thumb img {
+    width: 100%;
+}
+.about-thumb {
+    left: -10px;
+}
+.about-discription p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.section-discription p {
+    font-size: 15px;
+}
+.feature-area .main-title h2 {
+    font-size: 32px;
+}
+.product-kg {
+    margin-left: 10px;
+}
+.product-title h2 a {
+    font-size: 14px;
+}
+.testi-discription p {
+    font-size: 14px;
+    line-height: 25px;
+}
+.testi-thumb img {
+    width: 100%;
+}
+.blog-left span {
+    font-size: 10px;
+}
+.blog-left a {
+    font-size: 11px;
+}
+.blog-content p {
+    font-size: 12px;
+}
+.blog-content h2 a {
+    font-size: 20px;
+}
+.footer-title p {
+    font-size: 13px;
+}
+.footer-icon ul li a {
+    width: 48px !important;
+    height: 48px;
+    line-height: 48px;
+}
+.footer-discription p {
+    font-size: 14px;
+}
+.footer-thumb {
+    margin-bottom: 10px;
+}
+.footer-ico ul li span {
+    font-size: 15px;
+}
+.footer-ico ul li {
+    padding: 10px 0 0 0;
+}
+.single-offer-box.style-two .offer-titles h3 {
+    font-size: 21px;
+}
+.single-offer-box.style-one .offer-titles h3 {
+    font-size: 21px;
+}
+.main-titles h2 {
+    font-size: 30px;
+}
+.abouts-discription p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.about-section .signature img {
+    margin-top: -90px;
+}
+.about-section .signature {
+    margin: 0 0 0 180px;
+}
+.about-section .signature::before {
+    background: inherit;
+}
+.countdown-area.style-two .main-titles p {
+    font-size: 15px;
+}
+.testimonials-section .testi_title p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.testmoni_tmb img {
+    width: 100%;
+}
+.support-title h2 {
+    font-size: 18px;
+}
+.support-discription p {
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer-icon ul li {
+    margin-right: 0;
+}
+.footer-icons p {
+    font-size: 12px;
+}
+.service-title h2 {
+    font-size: 17px;
+}
+.service-title p {
+    font-size: 13px;
+}
+.clint-text p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.choose-thumb img {
+    width: 100%;
+}
+.why-choose-area .choose-title p {
+    font-size: 14px;
+}
+
+
+
+}
+/* small mobile :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.testi-thumb img {
+    width: 100%;
+}
+.slider-title h1 {
+    line-height: 60px;
+    font-size: 48px;
+}
+.slider-title p {
+    line-height: 25px;
+    font-size: 15px;
+}
+.slider-button {
+    margin-right: 15px;
+}
+.slider-button a {
+    padding: 17px 25px;
+}
+.single-offer-box {
+    padding: 34px 20px 55px 10px;
+}
+.single-offer-box.upper {
+    padding: 34px 20px 50px 10px;
+
+}
+.offer-title h2 {
+    font-size: 20px;
+}
+.offer-discription p {
+    font-size: 15px;
+    line-height: 23px;
+}
+.about-thumb img {
+    width: 100%;
+}
+.about-thumb {
+    left: 0;
+}
+.main-title h2 {
+    font-size: 23px;
+}
+.section-discription p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.icon-img img {
+    width: 60%;
+}
+.icon-title h2 {
+    font-size: 18px;
+}
+.about-icon {
+    margin-bottom: 16px;
+}
+.about-discription p {
+    font-size: 10px;
+    line-height: 20px;
+}
+.about-button a {
+    padding: 15px 30px;
+}
+.choose-discription p {
+    font-size: 12px;
+    line-height: 20px;
+}
+.choose-thumb img {
+    width: 100%;
+}
+.feature-area .main-title h2 {
+    font-size: 23px;
+}
+.testimonial-area .owl-prev {
+    left: 15px;
+}
+.testimonial-area .owl-next {
+    right: 15px;
+}
+.testi-discription p {
+    font-size: 13px;
+    width: 90%;
+    line-height: 23px;
+}
+.blog-left a {
+    margin-right: 15px;
+}
+.blog-content p {
+    font-size: 14px;
+}
+.footer-icon {
+    margin-bottom: 50px;
+}
+.copy-right-title h3 {
+    font-size: 13px;
+}
+.project-area {
+    padding: 50px 0 0px;
+}
+.product-area {
+    padding: 90px 0px 0 0px;
+}
+.slider-area.style-two .slider-title h1 {
+    line-height: 70px;
+    font-size: 50px;
+}
+.slider-area.style-two .slider-title p {
+    line-height: 25px;
+    font-size: 15px;
+}
+.slider-button {
+    margin-right: 12px;
+}
+.single-offer-box.style-one {
+    padding: 34px 10px 55px 20px;
+}
+.single-offer-box.style-two {
+    padding: 34px 10px 55px 20px;
+}
+.offer-area {
+    padding: 110px 0 0px;
+}
+.product-area.style-two .singles-products {
+    top: -25px;
+}
+.about-images img {
+    width: 100%;
+}
+.main-titles h2 {
+    font-size: 21px;
+}
+.abouts-titles h2 {
+    font-size: 16px;
+}
+.abouts-discription p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.about-section .signature {
+    display: none;
+}
+.countdown-area.style-two {
+    padding: 0;
+}
+.countdown-area.style-two .main-titles p {
+    font-size: 10px;
+    line-height: 23px;
+}
+.countdown-area.style-two li {
+    font-size: 15px;
+}
+.testimonials-section .testi_title h2 {
+    font-size: 16px;
+}
+.testimonials-section .testi_title p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.testmoni_tmb img {
+    width: 100%;
+}
+.support-content {
+    margin-bottom: 30px;
+}
+.support-discription p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.footer_section .form_box input {
+    width: 64%;
+}
+.call-do-title h1 {
+    font-size: 38px;
+}
+.clint-title h2 {
+    font-size: 18px;
+}
+.footer-top-title h1 {
+    font-size: 30px;
+}
+.copy-right-title ul li {
+    margin-right: 3px;
+}
+.why-choose-area .choose-titles p {
+    font-size: 12px;
+}
+.why-choose-area .choose-titles-2 p {
+    font-size: 12px;
+}
+.why-choose-area .icon-box {
+    padding-bottom: 0;
+}
+.why-choose-area .choose-titles-2::before {
+    left: 23px;
+    top: -28px;
+}
+.why-choose-area .choose-tmb img {
+    margin-top: 20px;
+}
+.why-choose-area .choose-title p {
+    font-size: 13px;
+}
+.testimonial_section .testimonial-title p {
+    font-size: 16px;
+    width: 80%;
+}
+.feature-area .main-title.upper h2 {
+	left: 90px;
+}
+.feature-title a {
+	font-size: 14px;
+}
+.blog-area.style-two .form-button button {
+	margin-bottom: 40px;
+}
+
+
+
+
+}
+/* small mobile :600px. */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.testi-thumb img {
+    margin-bottom: 40px;
+}
+.about-images img {
+    width: 100%;
+}
+.slider-title h1 {
+    line-height: 50px;
+    font-size: 50px;
+}
+.slider-title p {
+    line-height: 25px;
+    font-size: 14px;
+}
+.slider-thumb img {
+    display: none;
+}
+.single-offer-box {
+    padding: 34px 100px 55px 40px;
+    margin-bottom: 30px;
+}
+.about-thumb img {
+    width: 100%;
+}
+.about-thumb {
+    position: relative;
+    left: 0;
+    margin-bottom: 40px;
+}
+.main-title h2 {
+    font-size: 30px;
+}
+.icon-img img {
+    width: 60%;
+}
+.icon-title h2 {
+    font-size: 18px;
+}
+.about-discription p {
+    font-size: 14px;
+}
+.product-area .section-discription p {
+    font-size: 14px;
+    width: 90%;
+}
+.blog-area .project-button a {
+    padding: 10px 30px;
+}
+.footer-icon {
+    margin-bottom: 30px;
+}
+.copy-right-title {
+    text-align: center;
+}
+.copy-right-thumb {
+    text-align: center;
+}
+.counter-area {
+    background: #154539;
+    padding: 30px 0px 50px 0px;
+}
+.offer-area {
+    padding: 110px 0 0;
+}
+.product-area.style-two .singles-products {
+    top: -15px;
+}
+.about-images img {
+    width: 100%;
+}
+.main-titles h2 {
+    font-size: 30px;
+}
+.abouts-discription p {
+    font-size: 14px;
+}
+.support-content {
+    margin-bottom: 30px;
+}
+.footer_section .form_box input {
+    width: 43%;
+}
+.copy-left-title h3 {
+    text-align: center;
+}
+.blog-area.style-two .form-button {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.blog-content p {
+    font-size: 13px;
+}
+.service-img img {
+    bottom: 170px;
+}
+.call-do-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.portfolio_nav .portfolio_menu ul li {
+    margin: 0 7px;
+}
+.choose-thumb img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.team-single-box {
+    margin-bottom: 30px;
+}
+.testimonial_section .testimonial-title p {
+    font-size: 14px;
+    width: 90%;
+}
+.copy-right-titles h3 {
+	font-size: 13px;
+	text-align: center;
+}
+
+
+
+
+}
+
+/* small mobile :320px. */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+.testi-thumb img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.slider-title h1 {
+    line-height: 40px;
+    font-size: 40px;
+}
+.slider-title p {
+    line-height: 23px;
+    font-size: 13px;
+}
+.slider-thumb {
+    display: none;
+}
+.slider-area {
+    height: 560px;
+}
+.owl-nav {
+    display: none;
+}
+.slider-button a {
+    font-size: 14px;
+    padding: 10px 17px;
+}
+.slider-button {
+    margin-right: 15px;
+}
+.slider-btn a {
+    font-size: 14px;
+    padding: 10px 17px;
+}
+.main-title h2 {
+    font-size: 21px;
+}
+.sub-title h5 {
+    font-size: 13px;
+}
+.single-offer-box {
+    padding: 34px 20px 55px 25px;
+}
+.offer-title h2 {
+    font-size: 15px;
+}
+.offer-discription p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.single-offer-box.upper {
+     padding: 34px 20px 55px 25px;
+}
+.offer-area {
+    padding: 70px 0;
+}
+.icon-img img {
+    width: 60%;
+}
+.icon-img {
+    margin-bottom: 20px;
+}
+.about-discription p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.section-discription p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.choose-discription p {
+    font-size: 13px;
+    line-height: 22px;
+}
+.choose-thumb img {
+    width: 100%;
+}
+.feature-area .main-title h2 {
+    margin-left: 60px;
+}
+.counter-area {
+    background: #154539;
+    padding: 30px 0px 50px 0px;
+}
+.product-area .section-discription p {
+    font-size: 12px;
+    line-height: 23px;
+    width: 100%;
+}
+.project-area {
+    padding: 0px 0 0px;
+}
+.countdown-area .row.backg {
+    padding: 56px 10px 63px 5px;
+}
+.countdown-area li {
+    margin-right: 5px;
+    font-size: 15px;
+}
+.countdown-area li span {
+    height: 60px;
+    width: 60px;
+    line-height: 61px;
+}
+.testi-discription p {
+    font-size: 14px;
+    width: 90%;
+}
+.project-button {
+    display: none;
+}
+.blog-left span {
+    font-size: 11px;
+}
+.blog-left a {
+    font-size: 12px;
+    margin-right: 10px;
+}
+.blog-content p {
+    font-size: 12px;
+}
+.blog-area .owl-dots {
+    left: 25%;
+    margin-top: 0;
+}
+.footer-icon {
+    margin-bottom: 30px;
+}
+.copy-right-title h3 {
+    font-size: 11px;
+}
+.blog-content h2 a {
+    font-size: 20px;
+}
+.about-thumb {
+    left: 0;
+}
+.about-thumb img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.slider-area.style-two .slider-title h1 {
+    line-height: 60px;
+    font-size: 45px;
+}
+.slider-area.style-two .slider-title p {
+    line-height: 25px;
+    font-size: 13px;
+}
+.slider-area.style-two .slider-button a {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.slider-area.style-two .slider-btn a {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.slider-area.style-two {
+    height: 550px;
+}
+.main-titles h2 {
+    font-size: 18px;
+}
+.single-offer-box.style-one {
+    padding: 34px 10px 55px 10px;
+}
+.single-offer-box.style-two {
+     padding: 34px 10px 55px 10px;
+}
+.product-area.style-two .singles-products {
+    top: 0;
+}
+.about-images img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.abouts-titles h2 {
+    font-size: 15px;
+}
+.abouts-discription p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.about-section .signature {
+    display: none;
+}
+.countdown-area.style-two li {
+    font-size: 13px;
+    margin-right: 5px;
+}
+.testimonials-section .testi_title h2 {
+    font-size: 15px;
+}
+.testimonials-section .testi_title p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.testmoni_tmb img {
+    width: 100%;
+    margin-top: 30px;
+}
+.support-title h2 {
+    font-size: 18px;
+}
+.support-discription p {
+    font-size: 12px;
+    line-height: 23px;
+}
+.support-content {
+    margin-bottom: 30px;
+}
+.breadcumb-title h1 {
+    font-size: 35px;
+}
+.blog-bottom-icon ul li a {
+    margin: 0 3px 0 0;
+}
+.blog-area.style-two .form-button {
+    margin-bottom: 50px;
+}
+.footer_section .form_box input {
+    width: 74%;
+}
+.copy-left-title h3 {
+    font-size: 14px;
+    text-align: center;
+}
+.copy-right-title ul li a {
+    font-size: 13px;
+}
+.copy-right-title ul li {
+    margin-right: 3px;
+}
+.about-icon h2 {
+    font-size: 14px;
+    margin: 0 0 0px 0;
+}
+.about-button {
+    margin-bottom: 80px;
+}
+.call-do-title h1 {
+    font-size: 30px;
+    line-height: 41px;
+}
+.clint-title h2 {
+    font-size: 16px;
+}
+.footer-top-title h1 {
+    font-size: 24px;
+    text-align: center;
+}
+.footer-top-button {
+    text-align: center;
+}
+.team-area.style-five .team-single-box-5 .team-content {
+    bottom: 0;
+}
+.testimonial_section .testimonial-title p {
+    font-size: 12px;
+    line-height: 23px;
+    width: 90%;
+}
+.why-choose-area .choose-title p {
+    font-size: 11px;
+}
+.why-choose-area .choose-titles-2 h2 {
+    font-size: 17px;
+}
+.why-choose-area .choose-titles h2 {
+    font-size: 17px;
+}
+.why-choose-area .choose-titles p {
+    font-size: 13px;
+}
+.why-choose-area .choose-titles-2 p {
+    font-size: 13px;
+}
+.why-choose-area .choose-tmb img {
+    margin-top: 29px;
+}
+.why-choose-area .choose-titles-2::before {
+    background: inherit;
+}
+.why-choose-area .icon-box {
+    padding-bottom: 10px;
+}
+.choose-thumb img {
+    margin-bottom: 40px;
+}
+.feature-area .main-title.upper h2 {
+	left: 0;
+}
+
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+.header-top{
+     display: none;
+    }
+header.main-header {
+    display: none;
+}
+
+
+
+}

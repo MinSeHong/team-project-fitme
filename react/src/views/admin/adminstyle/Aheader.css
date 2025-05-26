@@ -1,0 +1,15 @@
+.fa-cog{
+    color: white;
+}
+.tcon {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.tcon i {
+    margin-right: 20px; /* 아이콘과 텍스트 사이 간격 조절 */
+}
+.tcon h2{
+    margin-top: 10px;
+    color: white;
+}

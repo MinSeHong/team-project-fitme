@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 매퍼파일 -->
+<mapper namespace="com.security.game.dao.GameAccountMapper">
+	<update id="gameAccountUpdate" parameterType="GameAccountDto">
+		UPDATE GAME_ACCOUNT
+		<set>
+		   <if test="gameImage != null">GAME_IMAGE = #{gameImage},</if>
+		   <if test="nickname != null">NICKNAME = #{nickname}</if> 
+		</set>    
+		WHERE
+		    ACCOUNT_NO = #{accountNo}
+	</update>
+	
+	<insert id="gameAccountInsert" parameterType="GameAccountDto">
+    	INSERT INTO GAME_ACCOUNT(account_no, game_image, nickname) VALUES (#{accountNo}, #{gameImage}, #{nickname}) 
+	</insert> 
+
+	<select id="findByAccountNo" parameterType="String" resultType="GameAccountDto">
+   	 	SELECT account_no, nickname, game_image FROM GAME_ACCOUNT WHERE account_no=#{accountNo}
+	</select>
+
+	<insert id="createGameRoom" parameterType="GameRoomDto" useGeneratedKeys="true" keyProperty="gameroomNo">
+	    INSERT INTO GAMEROOM (gameroom_no)
+	    VALUES (SEQ_ROOMNO.NEXTVAL)
+	</insert>
+
+	<insert id="insertGameRoomRanking">
+       INSERT INTO gameroom_ranking (gameroom_no, account_no, game_date, gameroom_rank, gameroom_point, game_mode, status)
+       VALUES (SEQ_GAMEROOM.currval, 81, default, 0, 0, 'squat', default)
+    </insert>
+
+</mapper>

@@ -1,0 +1,105 @@
+
+.game-profile-edit-image-layout{
+    position: relative;
+    width:100%;
+    height:300px;
+    background-color: #E8EBEC;
+    border-radius:5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.game-profile-edit-image-layout img{
+    left: -1%;
+    top:-1%;
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    
+}
+
+.game-profile-edit-button-layout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height:60px;
+    border-radius:5px;
+    background-color: #E8EBEC;
+}
+
+.game-profile-modal-edit-button{
+    width: 140px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 70%;
+    color:black;
+    background-color: white;
+}
+
+
+.label-line-height{
+    line-height: 42px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.ai-image-create{
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F4EC;
+    place-items: center;
+    border-radius: 5px;
+}
+
+.ai-image-input{
+    margin-top: 10px;
+    width: 90%;
+    border:1px solid #ced4da;
+    color: #212529;
+    border-radius: 5px;
+    box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.ai-image-input::placeholder{
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+.game-profile-modal-edit-button-ai-layout{
+    margin-top: 5px;
+    background-color: #F6F4EC;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-profile-modal-edit-button-ai{
+    width: 80px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    height: 70%;
+    color:rgb(200, 200, 200);
+    color:#212529;
+}

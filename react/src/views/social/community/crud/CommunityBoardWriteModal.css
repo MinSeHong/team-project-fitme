@@ -1,0 +1,89 @@
+.community-write-button{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border:1px solid #ced4da;
+    background-color: #F6F6F6;
+    color: #212529;
+}
+
+.blog-image-button{
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    position: absolute;
+    z-index: 5;
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
+    left:0; right: 0;
+    bottom: 0; top:0;
+    margin: auto;
+    border:5px solid #c2cfdb;
+    background-color: #F6F6F6;
+    line-height: 50px;
+}
+
+.community-modal-select{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border:1px solid #ced4da;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+
+.my-swal-container {
+    z-index: 9999;
+}
+
+
+
+/***** 해시 태그용 레이아웃 *********/
+.community-hashtag{
+    /*
+    border:1px solid #ced4da;
+    background-color: #F6F6F6;
+    */
+    overflow: hidden;
+    margin-top: -10px;
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+    display:flex;
+}
+
+
+
+
+/***** 해시 태그용 span *********/
+.community-hashtag span{
+    pointer-events: none;
+    line-height: 45px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    font-size: 18px;
+    margin: 0px 5px;
+    border:1px solid #ced4da;
+    background-color: #F6F6F6;
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/***** 해시 태그 뒤에 붙는 닫기 버튼 *********/
+.community-hashtag span::after {
+    pointer-events: all;
+    display: inline-block;
+    content: 'x';  
+    margin-left: 6px;
+    transform: translateY(3px);
+    padding: 2px 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border:1px solid #9ba0a4;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 25px;
+    pointer-events: all;
+    cursor: pointer;
+  }

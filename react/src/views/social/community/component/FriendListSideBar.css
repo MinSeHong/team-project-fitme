@@ -1,0 +1,128 @@
+.FLbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.showcase {
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 380px;
+    margin-bottom: 20px;
+    box-Shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1)
+  }
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  small {
+    display: block;
+    color: #666;
+    text-align: center;
+  
+    a {
+      color: #f1708f;
+  
+      &:hover {
+        color: #ee406a;
+      }
+    }
+  }
+  
+  /* 탭 스타일 */
+  
+  .tabgroup {
+    display: flex;
+    margin-bottom: 15px;
+    height: 50px;
+  }
+  
+  .tab {
+    flex: 1; /* Adjust this value as needed to make all tabs have the same width */
+    border: 1px solid #dcdcdc;
+    padding: 15px 20px;
+    margin-left: -12px;
+    border-radius: 5px;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  
+    &:hover {
+      background-color: #eee;
+      border-color: #b1b1b1;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .tab:nth-of-type(2),
+  .tab:nth-of-type(3) {
+    margin-left: -5px;
+  }
+  
+  .tab-active {
+    z-index: 1;
+    border-top: 4px solid #0fa3ff; /* 변경된 상단 보더 색상 및 두께 */
+    border-right: 1px solid #dcdcdc; /* 우측 보더 추가 */
+    border-left: 1px solid #dcdcdc; /* 좌측 보더 추가 */
+    border-bottom: 1px solid #dcdcdc; /* 하단 보더 추가 */
+
+    &:hover {
+        border-top: 4px solid #0fa3ff;
+        border-right: 1px solid #dcdcdc; 
+        border-left: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    &:focus {
+        border-top: 4px solid #0fa3ff;
+        border-right: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+    }
+}
+  
+
+
+  /* 리스트 */
+  
+  .person-list {
+    padding: 0;
+    margin: 0 15px 30px;
+    list-style: none;
+    color: #555;
+    border-top: 1px solid #ddd;
+  }
+  
+  .person-item {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: #eee;
+    }
+  }
+  
+  .person-name {
+    padding-left: 20px;
+    flex: 1;
+  }
+  
+  .person-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 16px;
+  }

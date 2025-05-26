@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 매퍼파일 -->
+<mapper namespace="com.security.websocket.chat.dao.ChatMapper">
+	<select id="findChatListByNo" parameterType="int" resultType="ChatListDto">
+		SELECT chatting_nick
+				,c.chatting_no chatting_no
+				,c.account_no
+				,(SELECT count(chatting_no) FROM chatting_list WHERE chatting_no = c.chatting_no GROUP BY chatting_no) count 
+		FROM chatting_list cl, chatting c 
+		WHERE cl.chatting_no = c.chatting_no 
+			AND cl.account_no = #{accountNo}
+	</select>
+	
+	<!--  채팅방 멤버 확인 -->
+	<select id="findChatRoomMemberByChatNo" parameterType="int" resultType="ChatMemberDto">
+		SELECT chatting_no
+				,a.account_no
+				,name
+				,image
+				,(select c.account_no 
+				  FROM chatting c 
+				  where c.chatting_no = cl.chatting_no) king 
+		FROM chatting_list cl
+			,ACCOUNT a 
+		WHERE cl.account_no=a.account_no 
+			and chatting_no = #{chattingNo}
+	</select>
+	<!--  채팅방 친구 추가 리스트-->
+	<select id="findChatFriendsByChatNo" parameterType="ChatDto" resultType="ChatFriendsDto">
+		SELECT DISTINCT a.name name
+                ,f.opponent_no accountNo
+                ,image
+		FROM friendship f,
+		        account a
+		WHERE f.account_no = #{accountNo}
+		    AND f.opponent_no NOT IN (
+		        SELECT account_no
+		        FROM chatting_list
+		        WHERE chatting_no = #{chattingNo}
+		    )
+		    AND a.account_no = opponent_no
+	</select>
+	
+	<!-- 채팅내용 출력 -->
+	<select id="findChatCommentByNo" parameterType="int" resultType="ChatCommentListDto">
+		SELECT * FROM (
+			SELECT * 
+			FROM (SELECT chatting_cno
+						,a.account_no
+						,name
+						,chat_comment
+						,to_char(post_date,'YYYY-MM-DD HH24:MI:SS') time 
+                        ,(select count(max(chatting_cno)) 
+                        	FROM chatting_read 
+                        	WHERE chatting_no = c.chatting_no 
+                        		and c.chatting_cno > chatting_cno 
+                        	GROUP BY chatting_no,account_no) read
+					FROM chatting_chatroom c
+						,account a 
+					WHERE c.account_no = a.account_no 
+						and chatting_no = #{chattingNo}
+					ORDER BY time desc) chat 
+			WHERE ROWNUM BETWEEN 1 AND 10
+		) ORDER BY time
+	</select>
+	<!-- 채팅방 확인용 -->
+	<select id="findChatByNo" parameterType="int" resultType="ChatRoomDto">
+		SELECT * FROM chatting WHERE chatting_no = #{chattingNo}
+	</select>
+	
+	<!-- 채팅방 인원 추가 -->
+	<insert id="chatRoomSave" parameterType="ChatRoomFriendsDto">
+		INSERT INTO chatting_list VALUES(#{chattingNo},#{accountNo}, concat((SELECT name FROM chatting c,account a WHERE a.account_no = c.account_no and chatting_no = #{chattingNo}),'님의 채팅방'))
+	</insert>
+	
+	<!-- 채팅방 추가 -->
+	<insert id="chatAddRoom" parameterType="string">
+		INSERT INTO chatting VALUES(seq_chatting.nextval,#{accountNo},DEFAULT)
+	</insert>
+	<!-- 채팅방 일련번호 확인 -->
+	<select id="chatAddRoomCheck" resultType="String">
+		SELECT max(chatting_no) FROM chatting
+	</select>
+	
+	<update id="chatRoomEditName" parameterType="ChatListDto">
+		UPDATE chatting_list SET chatting_nick =#{chattingNick} WHERE account_no = #{accountNo} and chatting_no = #{chattingNo}
+	</update>
+	
+	<insert id="insertChat" parameterType="ChatDto">
+		INSERT INTO chatting_chatroom VALUES(seq_chatroom.nextval,#{chattingNo},#{accountNo},default,#{chatComment},null,null)
+	</insert>
+	
+	<delete id="chatMemberDelete" parameterType="ChatRoomDto">
+		DELETE chatting_list WHERE chatting_no = #{chattingNo} and account_no = #{accountNo}
+	</delete>
+	<delete id="delete">
+		DELETE chatting WHERE chatting_no = #{chattingNo}
+	</delete>
+	
+</mapper>

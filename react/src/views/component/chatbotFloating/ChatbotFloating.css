@@ -1,0 +1,25 @@
+.chatbot-floating{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  right: 50px;
+  bottom: 50px;
+  background-color: #87c03da9;;
+  position: fixed;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.chatbot-floating:hover{
+  animation: chatbotAnimation 2s infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes chatbotAnimation {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}

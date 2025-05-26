@@ -1,0 +1,126 @@
+.f-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 100%;
+    padding: 5px; 
+}
+
+.search-container input[type="text"] {
+    flex: 1; 
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+}
+
+.search-container button {
+    padding: 8px 20px; 
+    background-color: #86BB71;
+    color: white;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+.search-container button:hover {
+    background-color: #5E904C;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+}
+
+.friend-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+  
+.friend-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.friend-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.friend-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+.friend-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+  
+.friend-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.friend-name {
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+    font-weight: bold; 
+}
+
+    
+.friend-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+}
+.sflist {
+    margin-bottom: 20px;
+}
+  
+.sfprofile {
+    display: flex;
+    align-items: center;
+}
+  
+.sfprofileI {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.finfo{
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-right: 4px;
+}
+.fname{
+    font-weight: unset;
+}
+.remove-btn{
+    border: none;
+    background-color: transparent;  
+}
+
+.selected-friends ul {
+    display: flex;
+    flex-wrap: wrap;
+}

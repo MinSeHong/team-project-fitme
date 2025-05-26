@@ -1,0 +1,67 @@
+.game-profile-name{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 15px 5px;
+    place-items: center;
+    height: 53%;
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.2);
+}
+
+.game-profile-name div{
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.268);
+    height: 25%;
+    width: 90%;
+    border-radius: 5px;
+    background-color:#b9c7cc;
+    display: flex;
+    line-height: 50px;
+    place-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.game-profile-name span:nth-child(1){
+    font-size: 13px;
+    margin-left: 15px;
+    width: 40%;
+    height: 80%;
+    line-height: 40px;
+    font-weight: bold;
+    border-right: 2px solid rgba(0, 0, 0, 0.261);
+    color: black;
+}
+
+
+.game-profile-name span:nth-child(2){
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.game-profile-edit-button{
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    right: 5px;
+    bottom:5px;
+    font-size: 25px;
+    width: 30px;
+    color: white;
+    background-color: #acacac;
+}
+
+.game-profile img{
+    position: absolute;
+    left:0;
+    border-radius: 5px;
+}
+
+.game-play-button-layout{
+    background-color: whitesmoke;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.game-play-button-layout button{
+    background-color: #849fe9;
+}

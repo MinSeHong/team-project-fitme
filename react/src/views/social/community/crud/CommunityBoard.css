@@ -1,0 +1,243 @@
+.bi1{
+  margin:0px 20px 0px 20px;
+}
+
+.blog-content-button{
+  border: none;
+  width: 40px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.391);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.314);
+}
+
+.blog-slide > .owl-next{
+  background-color: red;
+}
+
+.blog-slide > .owl-prev{
+  background-color: red;
+}
+
+/* 하트 */
+
+:root{
+  --heart-top:20px;
+  --heart-left:20px;
+}
+
+.heart-icon-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.heart-icon{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heart-icon svg {
+  fill: gray;
+  width: 100%;
+  height:100%;
+}
+
+.heart-icon span {
+  pointer-events: none;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #E12A50;
+  opacity: 0;
+  border-radius: 6px;
+  position: absolute;
+}
+
+.heart-dots span{
+  animation-name: hover;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.heart-liked span {
+  animation-name: click;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1;
+}
+
+.heart-beating {
+  animation-name: beat;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+}
+
+.heart-liked svg {
+  fill: #dd3052;
+}
+
+
+.heart-icon .i1 {
+  top: -8px;
+  left: 12px;
+  background: #D0CFB6;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.heart-icon .i2 {
+  top: 32px;
+  left: 12px;
+  background: #ffe100;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.heart-icon .i3 {
+  top: -2px;
+  left: -3px;
+  background: #0800ff;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.heart-icon .i4 {
+  top: -2px;
+  left: 27px;
+  background: #ff00a6;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.heart-icon .i5 {
+  top: 12px;
+  left: -8px;
+  background: #B993E5;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.heart-icon .i6 {
+  top: 12px;
+  left: 32px;
+  background: #1e7200;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.heart-icon .i7 {
+  top: 25px;
+  left: -3px;
+  background: #D7A4BE;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.heart-icon .i8 {
+  top: 25px;
+  left: 27px;
+  background: #e7d9a7;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@keyframes hover{
+0%{
+  opacity:1;
+  transform:scale(2)
+}
+15%{
+  opacity:1;
+  transform:scale(1);
+}
+100%
+{
+  top:12px;
+  left:12px;
+  opacity:1
+}
+}
+
+
+
+@keyframes click
+{
+0%{
+  top:4px;
+  left:7px
+}
+15%{
+  opacity:1;
+  transform:scale(1.2) translateY(-50%);
+}
+70%{
+  opacity:1;
+  transform:scale(1) translateY(-50%);
+}
+100%{
+  opacity:1;
+  transform:scale(0) translateY(-50%);
+}
+}
+
+
+@keyframes beat{
+0%{
+  transform:scale(1) translateY(-50%);;
+  color:#C7C7C7
+}
+50%{
+  transform:scale(1.35) translateY(-40%);
+}
+100%{
+  transform:scale(1) translateY(-50%);
+}
+}
+
+
+
+
+/************* 커뮤니티에 있는 해쉬 태그 *************/
+.community-board-hashtag{
+  display: flex;
+  margin-left: 20px;
+}
+
+.community-board-hashtag span{
+  color: #0800ff91;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0px 10px 0px 0px;
+}
+
+.community-detail-button{
+  user-select: none;
+  cursor:pointer;
+  display: flex;
+  height: 20px;
+}
+
+.community-detail-button-list{
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.256);
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.community-detail-button-list div{
+  background-color: #e1e1e1;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.community-detail-button-list div:hover{
+  background-color: #c0c0c0;
+}

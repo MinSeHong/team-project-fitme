@@ -1,0 +1,29 @@
+
+
+.sideber-search-box{
+    background-color: #FFFFFF;
+}
+
+
+.error-text {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    animation: MapPadding 5s ease forwards;
+    background-color: #FFFFFF;
+    width: 80%;
+}
+@keyframes MapPadding {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

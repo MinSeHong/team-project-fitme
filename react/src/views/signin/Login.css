@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* cnd,폰트,이미지 받아오기 @import로 넣기*/
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.login-heading {
+  text-align: center; /* Center-align the heading */
+  color: #333333; /* Change the color if needed */
+  font-family: 'Noto Sans KR', sans-serif; 
+}
+
+.login-form {
+  margin:auto;
+  padding: 20px;
+  width: 300px;
+  background-color: #EEEFF1;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.text-field {
+  border: none;
+  border-radius: 5px;
+  width: 260px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.text-field::placeholder {
+  color: lightgray;
+}
+
+.submit-btn {
+  color: white;
+  width: 260px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1BBC9B;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.submit-btn:hover {
+  border: 2px solid #fff; /* Add a border on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+}
+
+.remember-label {
+  color: #555555;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.links {
+  text-decoration: none;
+  text-align: center;
+  color:red;
+}
+
+.links a {
+  text-decoration: none;
+  color: #9B9B9B;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.links p {
+  text-decoration: none;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+  margin: 8px 0px;
+  font-weight: bold;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+
+.btn-social-login-group {
+  display: flex;
+  justify-content: space-between; /* Adjust the space between buttons */
+}
+
+.btn-social-login {
+  transition: all .2s;
+  outline: 0;
+  border: 0px solid red;
+  padding: .50rem !important;
+  border-radius: 35%;
+  color: #fff;
+  margin: 0;
+}
+.btn-social-login-google {
+  background-color: #D93025;
+}
+
+.btn-social-login-facebook {
+  background-color: #3B5998;
+}
+
+
+.btn-social-login-naver {
+  background-color: #1FC700; 
+}
+
+.btn-social-login-kakaotalk {
+  background-color: #FFEB00 ; 
+}
+
+.btn-social-login:focus {
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.text-dark { color: #343a40!important; }
+
+.agree {
+  text-align: center;
+  color: #555555;
+  font-size: 12px;
+  margin-top: 20px; /* Adjust the margin-top for spacing */
+}
+
+.agree span {
+  display: block;
+  margin-top: 10px; /* Adjust the margin-top for spacing */
+}
+
+.agree a {
+  color: #1BBC9B;
+  text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+/* CartListContainer.css */
+
+.thumbnail {
+    width: 100px; /* 원하는 가로 크기 */
+    height: auto; /* 세로 크기는 가로에 비례하여 자동 조정 */
+}
+
+.cart-list-container {
+    margin-bottom: 20px;
+}
+
+.fill-table-layout {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tr {
+    border-bottom: 1px solid #ddd;
+    display: flex; /* 가로 정렬을 위해 flex 속성 추가 */
+}
+
+.th, .td {
+    padding: 15px;
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    display: flex; /* 세로 정렬을 위해 flex 속성 추가 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+.td {
+    border-right: 1px solid #ddd;
+    flex: 1; /* 각 열이 동일한 너비를 가지도록 flex 속성 추가 */
+}
+
+.th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.td-name, .td-amount, .td-method, .td-status, .td-at, .notify, .td-buyer, .platform, .td-action {
+    width: 20%; /* Adjust the width as needed */
+    min-width: 150px; /* 최소 너비 설정 */
+    flex: none; /* 고정 너비로 설정 */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .td-name, .td-amount, .td-method, .td-status, .td-at, .notify, .td-buyer, .platform, .td-action {
+        width: auto; /* Allow columns to expand as needed */
+    }
+}
+.total-amount {
+    text-align: right;
+    font-weight: bold; /* 굵게 */
+    font-size: 1.2em; /* 크기 조절 */
+  }
+  .td-action button {
+    margin-left: 30px; /* 버튼과 체크박스 사이의 오른쪽 여백 조절 */
+    padding: 8px 16px; /* 버튼의 패딩 설정 */
+    font-size: 14px; /* 버튼의 글꼴 크기 설정 */
+    background-color: #F8A532; /* 버튼의 배경색 설정 */
+    color: #fff; /* 버튼의 글꼴 색상 설정 */
+    border: none; /* 버튼의 테두리 제거 */
+    border-radius: 4px; /* 버튼의 모서리를 둥글게 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+  }
+  
+  /* 버튼 호버 효과 */
+  .td-action button:hover {
+    background-color: #87C03D; /* 마우스 호버시 배경색 변경 */
+  }
+  
+  

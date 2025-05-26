@@ -1,0 +1,36 @@
+.search-style{
+    width:150px; 
+    height:50px; 
+    margin-top:13px;
+    text-align:center;
+    border-radius:3px;
+    border:1px solid #ced4da;
+    background-color: #5A5E62;
+    color: #212529;
+}
+
+.community-search-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border:1px solid #ced4da;
+    background-color: #F6F6F6;
+    color: #212529;
+}
+
+.game-select{
+    position:absolute;
+    right:-32px;
+    bottom:14px;
+    border-radius:3px;
+    width:130px;
+    height:50px;
+    background-color:white;
+    color:black;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+}
+
+.game-select option{
+    text-align: center;
+}

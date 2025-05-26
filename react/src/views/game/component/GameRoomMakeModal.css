@@ -1,0 +1,153 @@
+.game-modal-layout{
+    margin: auto;
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    padding: 10px;
+    gap:15px;
+    background-color: #f1f9fc;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(255, 255, 255, 0.571);
+}
+
+
+
+
+.game-room-modal-container{
+    height: 50px;
+}
+
+
+.grmc1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grmc2{
+    height: 60%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.486);
+}
+
+
+
+.grmc3{
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    height: 50px;
+}
+
+.game-room-modal-select{
+    border-radius:3px;
+    width:20%;
+    height:100%;
+    background-color: white;
+    border: none;
+    color:black;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 50px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.486);
+}
+
+.game-room-modal-select::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+.game-room-modal-title{
+    font-size: 20px;
+    line-height: 50px;
+    width: 25%;
+    background-color: white;
+    color:black;
+    padding: auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.486);
+}
+
+.game-mode-card{
+    margin: 15px 5px;
+    height: 200px;
+    border:1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    transition: all 0.3s;
+    cursor: pointer;
+    color:black;
+    box-shadow: inset 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.game-mode-card:hover{
+    scale: 1.05;
+}
+
+
+
+.game-room-modal-button{
+    width: 150px;
+    border-radius: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    color:black;
+    background-color: white;  
+}
+
+.game-room-modal-button:hover{
+    box-shadow: inset 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.game-mode-card-image{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    pointer-events:none;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.226);
+}
+
+
+.gmci1{
+    background-image: url(../images/squat.jpg);
+}
+
+.gmci2{
+    background-image: url(../images/pushup.png);
+}
+
+.gmci3{
+    background-image: url(../images/sit-up.png);
+}
+
+.gmci4{
+    background-image: url(../images/random.png);
+}
+
+
+.game-mode-card-title{
+    height: 20%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    pointer-events:none;
+    color:black;
+}
+
+.card-click-active{
+    border:2px solid red;
+}

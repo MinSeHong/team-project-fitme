@@ -1,0 +1,67 @@
+/* 신고된 게시물 리스트 컨테이너 */
+.ML {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+}
+
+/* 신고된 게시물 리스트 항목 */
+.ML ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ML li {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 400px; /* 원하는 너비로 설정 */
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  transition: box-shadow 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.ML li:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 효과 강화 */
+  transform: translateY(-3px); /* 호버 시 약간 위로 이동 */
+  cursor: pointer; /* 마우스 커서 모양 변경 */
+}
+
+.ML h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px; /* 제목 크기 조정 */
+  color: #333; /* 제목 색상 */
+}
+
+.ML p {
+  margin: 0;
+  color: #666; /* 내용 색상 */
+}
+
+/* 신고된 게시물 모달 스타일 */
+.RpostModal {
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 모달에 그림자 효과 추가 */
+}
+
+.RpostModal-content {
+  margin-top: 20px;
+}
+
+.RpostModal h2 {
+  margin-top: 0;
+}
+
+.RpostModal p {
+  margin: 10px 0;
+}

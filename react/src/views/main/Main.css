@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+  
+.text-orange{
+    color:#EFB443;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+

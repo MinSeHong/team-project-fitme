@@ -1,0 +1,51 @@
+/* Search.css 파일에 다음 내용을 추가하거나 수정합니다. */
+.admin-Search .GAS {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-records {
+  margin-top: 50px;
+  list-style-type: none;
+  padding: 0;
+  width: 30%;
+}
+
+.game-records ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: -600px;
+}
+
+.game-records li {
+  margin-left: 250px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff;
+  width: 40%; /* 너비를 조정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  transition: box-shadow 0.3s ease; /* 그림자 효과에 transition 추가 */
+}
+
+.game-records li:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 효과 강화 */
+  cursor: pointer;
+}
+
+.game-records li p:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.game-records li p {
+  margin: 5px 0;
+}
+

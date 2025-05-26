@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 매퍼파일 -->
+<mapper namespace="com.security.board.dao.CommentMapper">
+    
+    <!-- 특정 게시물에 대한 모든 댓글 조회 -->
+    <select id="findAllByNo" parameterType="String" resultType="BoardCommentDto">
+    	SELECT
+    	 C.* ,
+    	 (SELECT A.NAME FROM ACCOUNT A WHERE A.ACCOUNT_NO=C.ACCOUNT_NO) as NAME
+    	FROM BOARD_COMMENT C 
+    	WHERE BNO=#{bno}
+    	ORDER BY C.POST_DATE DESC
+    </select>
+    
+    <!-- 특정 댓글 하나 조화 -->
+    <select id="findByOne" parameterType="String" resultType="BoardCommentDto">
+    	SELECT * FROM BOARD_COMMENT WHERE BCNO=#{bcno}
+    </select>
+    
+    <!-- 게시판에서 사용자 정보 조회 -->
+	<select id="findByUsername" parameterType="String" resultType="AccountDto">
+		SELECT
+			ACCOUNT_NO
+		FROM ACCOUNT
+		WHERE ACCOUNT_NO = #{accountNo}
+	</select>
+    
+    <!-- 댓글 등록 -->
+    <insert id="insert" parameterType="BoardCommentDto">
+    	<selectKey keyProperty="bcno" order="BEFORE" resultType="String">
+				SELECT SEQ_BOARD_COMMENT.NEXTVAL
+				FROM DUAL
+		</selectKey>
+    	INSERT INTO 
+    	BOARD_COMMENT(BCNO, BNO, ACCOUNT_NO, POST_DATE, BC_COMMENT, REPLY_NO, EDIT_DATE) 
+    	VALUES(#{bcno}, #{bno}, #{accountNo}, SYSDATE, #{bcComment}, null, null)
+    </insert>
+    
+    <!-- 댓글 삭제 -->
+    <delete id="delete" parameterType="String">
+    	DELETE BOARD_COMMENT WHERE BCNO=#{bcno}
+    </delete>
+    
+    <!--댓글 수정 -->
+    <update id="update" parameterType="BoardCommentDto">
+    	UPDATE BOARD_COMMENT SET BC_COMMENT =#{bcComment}, EDIT_DATE=SYSDATE WHERE BCNO=#{bcno}
+    </update>
+    
+    <!-- 댓글 좋아요 누른 여부 확인 -->
+	<select id="findByCommentLike" parameterType="CommentLikeDto" resultType="int">
+		SELECT COUNT(BCNO) FROM BOARD_COMMENT_LIKES WHERE BCNO=#{bcno} AND ACCOUNT_NO=#{accountNo} 
+	</select>
+	
+	<!-- 댓글 좋아요 버튼 클릭 -->
+	<insert id="insertCommentLike" parameterType="CommentLikeDto">
+		INSERT INTO BOARD_COMMENT_LIKES VALUES(#{bcno}, #{accountNo}, SYSDATE)
+	</insert>
+	
+	<!-- 댓글 좋아요 삭제 -->
+	<delete id="deleteCommentLike" parameterType="CommentLikeDto">
+		DELETE FROM BOARD_COMMENT_LIKES WHERE BCNO=#{bcno} AND ACCOUNT_NO=#{accountNo}
+	</delete>
+	
+	<!-- 사용자 번호로 댓글 신고 여부 조회 -->
+	<select id="findReportByNo" parameterType="CommentReportDto" resultType="int">
+		SELECT COUNT(ACCOUNT_NO) FROM BOARD_COMMENT_REPORTS WHERE ACCOUNT_NO=#{accountNo} AND BCNO =#{bcno}
+	</select>
+	
+	<!-- 댓글 신고 등록 -->
+	<insert id="saveReport" parameterType="CommentReportDto">
+		INSERT INTO BOARD_COMMENT_REPORTS VALUES(#{bcno}, #{accountNo}, #{reportReason}, SYSDATE)
+	</insert>
+	
+</mapper>

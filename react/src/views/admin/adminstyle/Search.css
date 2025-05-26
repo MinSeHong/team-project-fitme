@@ -1,0 +1,174 @@
+.admin-Search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* 외부 간격 조절 */
+    margin-bottom: 70px;
+    margin-top: 5px;
+    margin-left: -300px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+  }
+  .Asearch-title {
+    position: sticky;
+  }
+  .ASPT {
+    position: relative;
+    bottom: 140px;
+    z-index: 1000;
+  }
+
+  .search-form input {
+    margin: 0 10px; /* 입력 요소 사이의 간격 조절 */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .search-form input[type="date"],
+  .search-form input[type="text"] {
+    width: 200px;
+  }
+  
+  .search-form button {
+    padding: 11px 13px;
+    background-color: #00A4FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* 버튼에 호버 효과 추가 */
+  .search-form button:hover {
+    background-color: #66cfff;
+  }
+  
+  
+  /* 달력 컨테이너 스타일 */
+  .ifdate_picker {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: -6px;
+  }
+  
+  /* 입력 필드 스타일 */
+  .ifdate_picker input {
+    margin-right: -11px;
+    margin-left: 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-top: 17px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .a-member-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .member-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%; /* 변경: 너비를 100%로 설정 */
+    max-width: 800px; /* 변경: 최대 너비 설정 */
+  }
+  .selectAll{
+    margin-left: -80px;
+  }
+
+  .member-title .name {
+    margin-left: -100px;
+  }
+  
+  .member-title .age {
+    margin-left: 6px;
+  }
+  
+  .member-title .enroll_date {
+    margin-right:178px;
+  }
+  
+  .member-item {
+    display: flex;
+    align-items: center; /* 아이템을 세로로 중앙 정렬 */
+    padding: 10px 0;
+    width: 100%; /* 변경: 한 줄에 한 명씩 나오도록 설정 */
+    max-width: 800px; /* 변경: 최대 너비 설정 */
+    border-bottom: 1px solid #ccc;
+  }
+
+  .member-item .actions {
+    margin-left: auto; /* 액션 항목을 오른쪽으로 이동 */
+  }
+  
+  .member-item:last-child {
+    border-bottom: none; /* 마지막 요소의 하단 테두리 제거 */
+  }
+  
+  .member-item > * {
+    width: 20%; /* 각 요소가 동일한 너비를 가지도록 설정 */
+    text-align: center;
+  }
+  
+  .member-item button {
+    background-color: #00A4FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  .Asearch-title h1{
+    position: absolute;
+    top: 80px; 
+    left: 30%; 
+  }  
+  .member-item button:hover {
+    background-color: #66cfff;
+  }
+  .pagination-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #00A4FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .pagination button:hover {
+    background-color: #66cfff;
+  }
+  

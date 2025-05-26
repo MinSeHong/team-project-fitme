@@ -1,0 +1,73 @@
+.detail-button{
+  position: relative;
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.Gprofile-edit-button-container {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+}
+
+.PPCR img {
+  max-width: 100%;
+  max-height: 200px; /* 예시로 지정한 최대 높이 */
+  }
+
+.PPCR span {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+  }
+
+.Gprofile-edit-button {
+  padding: 8px 20px;
+  background-color: #1BBC9B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Gprofile-edit-button:hover {
+  background-color: #1ed2ad;
+}
+.G-button {
+  padding: 8px 20px;
+  background-color: #1BBC9B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: -10px;
+  width: 100px;
+}
+
+.G-button:hover {
+  background-color: #1ed2ad;
+}
+
+.m-sweet-con{
+  z-index: 9999;
+}
+.m-sweet-icon {
+  font-size: 14px; /* 아이콘 크기 조절 */
+  margin-bottom: 10px; /* 아이콘과 제목 사이의 간격 조절 */
+}
+.swal2-icon.swal2-error {
+  font-size: 89%; /* 아이콘 크기 조절 */
+  margin-bottom: 10px; /* 아이콘과 제목 사이의 간격 조절 */
+}
+
+
+
+
+

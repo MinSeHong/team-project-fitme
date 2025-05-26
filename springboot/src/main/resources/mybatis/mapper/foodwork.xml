@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 매퍼파일 -->
+<mapper namespace="com.security.foodwork.dao.FoodWorkMapper">
+	<select id="findByUsername" parameterType="String" resultType="AccountFoodWorkDto">
+	
+		SELECT a.account_no,name,gender,age,height,weight,image 
+	    FROM account a 
+	    JOIN inbody i ON a.account_no = i.account_no 
+	    WHERE to_char(post_date,'YYYY-MM-DD HH24:MI:SS') = (SELECT max(to_char(post_date,'YYYY-MM-DD HH24:MI:SS')) FROM inbody i JOIN account a ON i.account_no = a.account_no WHERE username = #{username})
+
+	</select>
+	<select id="findByNo" parameterType="String" resultType="AccountFoodWorkDto">
+	
+		SELECT a.account_no,name,gender,age,height,weight,image 
+	    FROM account a 
+	    JOIN inbody i ON a.account_no = i.account_no 
+	    WHERE to_char(post_date,'YYYY-MM-DD HH24:MI:SS') = (SELECT max(to_char(post_date,'YYYY-MM-DD HH24:MI:SS')) FROM inbody i JOIN account a ON i.account_no = a.account_no WHERE a.account_no = #{accountNo})
+
+	</select>
+
+</mapper>

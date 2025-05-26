@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.security.model.UserMapper">
+	
+	<insert id="insertMember" parameterType="UserDto">
+		
+		<selectKey keyProperty="accountNo" resultType="long" order="BEFORE">
+			SELECT SEQ_ACCOUNT.NEXTVAL FROM DUAL
+		</selectKey> 
+		
+		INSERT INTO 
+			ACCOUNT(
+				ACCOUNT_NO, USERNAME, PASSWORD, NAME, GENDER, 
+				AGE, ADDRESS, HOBBY, ENROLL_DATE, Role, IMAGE
+				)
+			VALUES(
+				#{accountNo}, #{username}, #{password}, #{name}, #{gender, jdbcType=VARCHAR}, 
+				#{age}, #{address}, #{hobby}, default, default, #{image}
+				)
+	</insert>
+	
+	<insert id="insertMemberInBody" parameterType="UserDto">
+        INSERT INTO INBODY (ACCOUNT_NO,HEIGHT, WEIGHT) 
+        VALUES (#{accountNo}, #{height}, #{weight})
+    </insert>
+	
+		
+	<insert id="insertSocial" parameterType="UserDto">
+		INSERT INTO SOCIAL(ACCOUNT_NO, PROVIDER_ID, PROVIDER) 
+    	VALUES(#{accountNo}, #{providerId}, #{provider})
+	</insert>
+		
+	<insert id="insertMemberWithSocial" parameterType="UserDto">
+		<selectKey keyProperty="accountNo" order="BEFORE" resultType="long">
+			SELECT SEQ_ACCOUNT.NEXTVAL accountNo FROM DUAL
+		</selectKey>
+		INSERT INTO ACCOUNT(ACCOUNT_NO, USERNAME,PASSWORD)
+		VALUES (#{accountNo},#{username},#{password})
+	</insert>
+		
+	<select id="findAccountByUsername" parameterType="String" resultType="UserDto">
+		SELECT * FROM ACCOUNT WHERE USERNAME=#{username}
+	</select>
+	
+	<select id="findAccountByAccountNo" parameterType="String" resultType="UserDto">
+		SELECT * FROM ACCOUNT WHERE ACCOUNT_NO=#{accountNo}
+	</select>
+	
+	<select id="findAccountByProviderId" parameterType="String" resultType="UserDto">
+		
+		SELECT a.*,
+			s.PROVIDER_ID,
+			s.PROVIDER
+		FROM ACCOUNT a
+			JOIN SOCIAL s ON a.ACCOUNT_NO = s.ACCOUNT_NO
+		WHERE s.PROVIDER_ID = #{providerId}
+		
+	</select>
+	
+	<select id="findMemberInfoByUsername" parameterType="String" resultType="UserDto">
+		SELECT a.USERNAME,
+				a.NAME,
+				a.GENDER,
+				a.AGE,
+				a.ADDRESS,
+				a.HOBBY,
+				a.ENROLL_DATE,
+				a.IMAGE
+				
+			FROM ACCOUNT a				     
+		
+	</select>
+	
+	<update id="leaveMember" parameterType="long">
+	  UPDATE ACCOUNT
+	  SET ROLE = 'OUT'
+	  WHERE ACCOUNT_NO = #{accountNo}
+	</update>
+	
+	<select id="selectPasswordByUsername" parameterType="String" resultType="String">
+	  SELECT PASSWORD
+	  FROM ACCOUNT
+	  WHERE USERNAME = #{username}
+	</select>
+	
+	<update id="updatePasswordByUsername" parameterType="Map">
+	  UPDATE ACCOUNT
+	  SET PASSWORD = #{newPassword}
+	  WHERE USERNAME = #{username}
+	</update>
+	
+	
+</mapper>

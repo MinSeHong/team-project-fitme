@@ -1,0 +1,577 @@
+.chart-info-container {
+  border: 1px solid black;
+  border: hidden;
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  margin-bottom: 125px;
+}
+
+.chart-info-left {
+  float: left;
+  width: 50%;
+  height: 300px;
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.chart-info-right {
+  float: right;
+  width: 50%;
+  height: 300px;
+  border-radius: 0 15px 15px 0;
+  background-color: #FFFFFF;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.main-titles-chart h2 {
+  color: #255946;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  margin-left: 55px;
+  margin-bottom: 80px;
+}
+
+.main-titles-chart h2::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background: #87C03D;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+}
+
+
+/*프로파일 부분*/
+.profile-icon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+  border: 7px solid #F9BE41;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -30px;
+  background-size: cover;
+}
+
+.profile-description {
+  position: relative;
+  width: 230px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.profile-description-item {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.text-style-title {
+  font-weight: 500;
+}
+
+.text-style-description {
+  font-size: 15px;
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  border: none;
+}
+
+.sidebar-box {
+  margin-bottom: 40px;
+  padding: 45px 30px 15px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*캘린더 css*/
+
+.calendar-layout {
+  width: 400px;
+  height: 400px;
+  background-color: #f87171;
+  border-radius: 10px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #f87171;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1px;
+}
+
+
+.react-calendar {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  font-size: 1.1em;
+}
+
+.react-calendar__navigation button {
+  color: #1BBC9B;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+/* .react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+   } */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color: #1BBC9B;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+}
+
+.react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+}
+
+.react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #f87171;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1px;
+}
+
+
+.react-calendar {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+.react-calendar__navigation button {
+  color: #1BBC9B;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+/* .react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+   } */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color: #1BBC9B;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+}
+
+.react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+}
+
+.react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+}
+
+/*캘린더 css 끝*/
+
+/*추가 버튼*/
+.add-siksa-button,
+.add-workout-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 1050px;
+}
+
+/*추가 아이콘*/
+.add-siksa-icon,
+.add-workout-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+/*추가 버튼 끝*/
+
+/*수정 버튼*/
+.edit-siksa-button,
+.edit-workout-button {
+  background: none;
+  border: none;
+  margin: auto;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  
+}
+
+/*수정 버튼 */
+
+
+/* major container for exercise */
+/* =========== modal창 외부화면 =========== */
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* modal창 */
+.modalBody_w {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  z-index: 10000;
+  overflow-y: hidden;
+}
+
+#modalCloseBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
+  font-size: 20px;
+}
+
+#modalCloseBtn:hover {
+  cursor: pointer;
+}
+
+/* =========== modal창 끝 =========== */
+
+
+/* =========== 운동페이지-TODAY WORKOUT===========*/
+.major-icon-workout {
+  display: block;
+  margin-left: 75px;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.edit-workout-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-left: 15px;
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(2px 2px 2px #808080);
+  cursor: pointer;
+}
+
+/* =========== 운동페이지-모달 내용물 ===========*/
+.modal-workout-list {
+  display: flex;
+  flex-direction: column;
+  /*영역 구분용 점선*/
+  /*border: dashed 1px black;*/
+  border-collapse: collapse;
+}
+
+.modal-workout-list input[type="text"] {
+  order: 1;
+  padding-right: 0px;
+  height: 35px;
+  outline-color: #255946;
+}
+
+.modal-workout-list input[type="number"] {
+  order: 2;
+  padding-right: 0px;
+  height: 20px;
+  outline-color: #255946;
+}
+
+.modal-workout-list input[name="MEMO"] {
+  order: 3;
+  height: 150px;
+  resize: none;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  outline-color: #255946;
+}
+
+
+.modal-workout-chart {
+  display: inline-block;
+  margin-top: 10px;
+  /*border: dashed 1px black;*/
+  width: 350px;
+}
+
+.modal-add-label {
+  font-size: 14px;
+  /*border: dashed 1px black;*/
+}
+
+.submit-btn-modal {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.reset-btn-modal {
+  margin: 0 auto;
+
+}
+
+/* datepicker css및 날짜 선택창 모달창에 보이게 위치조정 */
+.date_picker {
+  display: flex;
+  margin-top: 15px;
+}
+
+.MuiPickersPopper-root {
+  z-index: 10001 !important;
+}
+
+
+/* =========== 운동페이지-모달 내용물 끝 ===========*/
+
+/* ============== AI추천 ==============*/
+
+
+/*유튜브*/
+.recommend-layout-w {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.recommend-container-w {
+  width: 49%;
+  height: 400px;
+}
+
+.recommend-container-w iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*ai 추천-리스트*/
+.list-container-ai-w{
+  float: left;
+  color: black;
+}
+.list-container-ai-w ol{
+  width: 300px;
+  list-style: none;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 50px;
+  list-style-image: url(images/training.png);
+}
+.list-container-ai-w ol li{
+  font-size: 1.2rem;
+  padding: 20px 30px;
+  margin: 10px 0;
+  background: white;
+  z-index: 100;
+  position: relative;
+  cursor: pointer;
+  transition: all .4s;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.list-container-ai-w ol li::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  z-index: -1;
+  transition: all .4s;
+}
+.list-container-ai-w ol li:hover::before{
+  width: 100%;
+}
+.list-container-ai-w ol li:nth-child(1)::before{
+  background: #4285f4;
+}
+.list-container-ai-w ol li:nth-child(2)::before{
+  background: #db4437;
+}
+.list-container-ai-w ol li:hover{
+  transform: translateX(20px);
+}
+
+/* ============== AI추천 ==============*/
+
+.chart-info-container-ai-w {
+  border: 1px solid black;
+  border: none;
+  display: inline-block;
+  margin-bottom: 0px;
+}

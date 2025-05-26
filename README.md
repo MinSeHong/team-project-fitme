@@ -9,13 +9,17 @@
 <p align='center'>
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
-</p>
+  <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"/>
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+  <br/>
+  <img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"/>
+  <img src="https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white"/>
+  
 </br>
 <p align='center'>
 AI 활용한 팀 프로젝트를 기획하면서, 식단과 운동을 동시에 관리해주는 서비스가 부족하다는 점을 발견했습니다.</br>
-식단과 운동 관리를 함께 제공할 뿐만 아니라 AI를 활용한 개인 맞춤형 피트니스 트레이너를 제공하는 서비스를 만들기로 했습니다</br>
+그리하여, 식단과 운동 관리를 함께 제공할 뿐만 아니라 AI 활용한 개인 맞춤형 피트니스 트레이너를 제공하는 서비스를 만들기로 했습니다</br>
 또한 운동 게임을 제공하여 사용자들이 서비스에 관심을 이끌 수 있도록 했습니다. 게임을 통해 포인트를 획득하고, 획득한 포인트로 상품을 구매할 수 있습니다.</br>
 </p>
 
